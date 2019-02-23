@@ -1,0 +1,169 @@
+body.case_studies-template-default {
+
+background-color: #f0ede5;
+
+
+.shrink {
+				padding-top: 0;
+				padding-bottom: 0;
+				background-color: #f0ede5;
+}
+
+}
+
+.cases { 
+
+	.cases-intro {
+
+		padding-top: 200px;
+
+	}
+
+.gradient-underlay-cases {
+        		position: absolute;
+        		top: 0;
+        		right: 0;
+        		width: 75%;
+        		height: 35%;
+        		background-color: #ece9de;
+        		opacity: .8;
+        		z-index: -1;
+
+        		        		img {
+
+							position: absolute;
+							top: 16%;
+							right: 15%;
+
+
+        		}
+
+ }
+
+.case-study-description {
+
+	    .subheader {
+
+    font-size: 0.75rem;
+    letter-spacing: .5rem;
+    color: $primary;
+  
+}
+
+.h3 {
+	font-size:  2rem;
+}
+
+.case-description {
+
+-webkit-box-shadow: -1px 7px 12px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 7px 12px -4px rgba(0,0,0,0.75);
+box-shadow: -1px 7px 12px -4px rgba(0,0,0,0.75);
+border-radius: 15px;
+
+.case-study-left-col {
+
+
+			.gradient-overlay {
+        		position: absolute;
+        		top: 0;
+        		right: 0;
+        		width: 100%;
+        		height: 100%;
+        		background: rgba(47, 47, 43, .3);
+        		z-index: 1;
+        		
+        	}
+
+img {
+							  border-top-left-radius: 15px;
+                              border-top-right-radius: 15px;
+}
+}
+
+
+
+.case-study-right-col {
+
+                              border-bottom-right-radius: 15px;
+                              border-bottom-left-radius : 15px;
+
+	.h3 span {
+
+								font-size: 20px;
+								font-weight: 100;
+								font-family: open-sans, sans-serif; 	
+  							    letter-spacing: .55rem;
+
+
+
+	}
+
+
+
+}
+
+}
+
+}
+
+}
+
+.solutions-section {
+
+	.h3 span {
+
+								font-size: 20px;
+								font-weight: 100;
+								font-family: open-sans, sans-serif; 	
+  							    letter-spacing: .55rem;
+
+
+
+	}
+
+
+	.solutions-menu {
+
+			.solutions-box {
+				
+					position: relative;
+
+				.circle-number {
+
+					position: absolute;
+					top: -12px;
+					left: 45%;
+                    z-index: 1;
+                     
+					span  {
+						
+						font-size: .6rem;
+						font-weight: 100;
+						color: $white;
+						background-color: $primary;
+						border: 10px solid $white;
+						border-radius: 100%;
+						width: 51px;
+						height: 52px;	
+						padding: 4px 8px;	
+						-webkit-box-shadow: -1px 3px 12px -4px rgba(0,0,0,0.75);
+						-moz-box-shadow: -1px 3px 12px -4px rgba(0,0,0,0.75);
+						box-shadow: -1px 3px 12px -4px rgba(0,0,0,0.75);
+
+				}
+
+
+			}
+
+
+	}
+
+	.solutions-box:hover {
+
+		background-color: #e2dccb;
+	}
+
+}
+
+}

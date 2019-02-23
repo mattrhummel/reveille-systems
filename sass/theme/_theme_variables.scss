@@ -1,0 +1,41 @@
+$primary: #500001; // Thats a sample how you could change a BootStrap variable.
+$secondary: #595a5b; // Thats a sample how you could change a BootStrap variable.
+$beige: #f0ede5;
+
+
+$body-bg:   #ffffff !default;
+$body-color: #6c757d  !default;
+
+
+$font-family-sans-serif:      open-sans, sans-serif;
+$font-family-base:            $font-family-sans-serif !default;
+
+$list-inline-padding:         3rem !default;
+
+
+$breadcrumb-divider-color:          #595a5b !default;
+$breadcrumb-bg:                     #ffffff !default;
+$breadcrumb-active-color:           #500001 !default;
+$breadcrumb-divider:                quote("|") !default;
+
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    8: ($spacer * 8),
+    10: ($spacer * 10)
+
+  ),
+  $spacers
+);
+
+$card-columns-count:  2 !default;

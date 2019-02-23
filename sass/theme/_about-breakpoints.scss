@@ -1,0 +1,211 @@
+@include media-breakpoint-between(md, xl) {
+
+//about page 
+//
+//
+//
+
+
+//why choose
+//
+.why-choose-section {
+
+	border-radius: 15px;
+	padding: 0;
+
+.why-choose-slider {
+	position: relative;
+  padding: 0;
+
+.owl-nav {
+
+
+bottom: 80px;
+
+left: 9%;
+
+}
+
+
+
+				}
+
+.why-choose-left-col {
+
+ position: relative;
+background-color: #f0ede5;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+
+
+				.why-background-text {
+					
+				font-size: 212.94px;
+				position: absolute;
+				top: 10%;
+				left: 7%;
+
+				}
+
+				.why-foreground-text {
+
+						top: 44%;
+						left: 29%;
+
+				}
+
+}
+
+.why-choose-right-col {
+
+				background-color: $primary;
+				border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 0px;
+
+.reasons {
+
+	li {
+
+								padding: 1rem 0 1rem 1rem;
+
+
+
+	}
+
+	li:before {
+ 
+}
+
+				}
+
+}
+
+
+}
+
+
+
+//
+.our-team-section {
+    
+    .subheader {
+      font-size: 1.5rem;
+      letter-spacing: .5rem;
+      color: $primary;
+    }
+
+
+}
+
+
+.our-customers-section {
+
+    .subheader {
+      font-size: 1.125rem;
+      letter-spacing: .5rem;
+    }
+
+.markets {
+
+    position: relative;
+    display: block;
+
+  .box-text {
+
+    padding-top: 60px;
+
+  p {
+    margin-bottom: 60px;
+  }
+
+ .h4 {
+
+  font-size: 3.75rem;
+
+
+ }
+
+.markets-slider {
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-dot {
+    font-family: 'fontAwesome';
+
+}
+
+.owl-nav {
+
+
+bottom: 20px;
+
+right: 43%;
+
+max-width: 150px;
+
+width: 150px;
+
+padding-right: 50px;
+
+z-index: 20;
+}
+
+.owl-dots {
+
+
+bottom: 20px;
+
+right:38%;
+
+max-width: 100px;
+
+width: 100px;
+
+z-index: 21;
+
+}
+
+}
+}
+
+    .box-background {
+      padding: 10px 40px 40px 40px;
+      margin-top: 100px;
+      border-radius: 15px;
+    }
+
+    .box-image {
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+     
+
+        img {
+             -webkit-box-shadow: -2px 1px 5px 3px rgba(0,0,0,0.33);
+-moz-box-shadow: -2px 1px 5px 3px rgba(0,0,0,0.33);
+box-shadow: -2px 1px 5px 3px rgba(0,0,0,0.33);
+border-radius: 15px;
+        }
+
+    }
+    
+    .h4 {
+
+      //79.97px
+      font-size: 4.998125rem;
+    }
+
+    .h5 {
+      //17.99px;
+      font-size: 1.124375rem;
+    }
+
+}
+
+
+}
+
+}
