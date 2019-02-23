@@ -17,8 +17,8 @@
 															<h4 class="h4 text-capitalize">About Us</h4>
 															<p class="pr-md-3">Reveille is a small business founded in 2010 and headquartered in Fredericksburg, VA. We specialize in information technology (IT) and management consulting services to both government and commercial clients.</p>
 															<div class="calltos">
-																<a href="#" type="button" class="btn callto-button font-weight-bold text-capitalize package-button">about us<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-																<a href="#" type="button" class="btn callto-button font-weight-bold text-capitalize package-button">contact us<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+																<a href="#" class="btn callto-button font-weight-bold text-capitalize package-button">about us<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+																<a href="#" class="btn callto-button font-weight-bold text-capitalize package-button">contact us<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 															</div>
 														</div>
 													</div>
