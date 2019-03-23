@@ -33,7 +33,53 @@ if ( ! function_exists( 'reveille_systems_posted_on' ) ) :
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 	}
+
 endif;
+
+if ( ! function_exists( 'reveille_systems_breadcrumbs' ) ) :
+	
+	/**
+	 * Displays page breadcrumbs
+	 */
+	function reveille_systems_breadcrumbs() {
+
+	echo  '<nav class="container breadcrumb">';
+	echo '<nav aria-label="breadcrumb">';
+		echo '<ol class="breadcrumb pl-0">';
+			echo '<li class="breadcrumb-item text-lowercase">';
+			echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="text-muted text-light"><i class="fa fa-chevron-left  text-muted" aria-hidden="true"></i>';
+			 _e(' return to home', 'reveille-systems'); 
+			 echo '</a></li>';
+			echo '<li class="breadcrumb-item active font-weight-bold text-lowercase" aria-current="page">';
+		         the_title(); 
+		   echo '</li>';
+		echo '</ol>';
+	echo '</nav>';
+echo '</nav>';
+
+	}
+endif;
+
+
+if ( ! function_exists( 'reveille_systems_header_content' ) ) :
+	
+	/**
+	 * Displays page breadcrumbs
+	 */
+	function reveille_systems_header_content() {
+
+				echo '<header class="header-content col-sm-12 col-md-8 pb-3">';
+				echo '<span class="text-uppercase subheader">' ;
+				the_field('page_subheader');
+				echo '</span>';
+				the_title( '<h1 class="h1 font-weight-bold">', '</h1>', 'reveille-systems' ); 
+			    echo '</header>';
+
+
+	}
+
+endif;
+	
 
 if ( ! function_exists( 'reveille_systems_posted_by' ) ) :
 	/**

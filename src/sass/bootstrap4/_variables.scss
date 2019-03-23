@@ -190,10 +190,10 @@ $grid-breakpoints: () !default;
 $grid-breakpoints: map-merge(
   (
     xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 1024px,
-    xl: 1200px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
   ),
   $grid-breakpoints
 );
@@ -254,7 +254,7 @@ $component-active-bg:         theme-color("primary") !default;
 
 $caret-width:                 .3em !default;
 
-$transition-base:             all .2s ease-in-out !default;
+$transition-base:             all .8s ease-in-out !default;
 $transition-fade:             opacity .15s linear !default;
 $transition-collapse:         height .35s ease !default;
 

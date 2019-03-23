@@ -10,6 +10,9 @@
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
 * @package reveille-systems
+*
+* Template Name: Careers
+*
 */
 get_header();
 ?>
@@ -17,29 +20,32 @@ get_header();
 while ( have_posts() ) :
 the_post();  ?>
 <!--page breadcrumbs-->
-<div class="page-wrapper">
+<div class="page-wrapper pb-5">
 	<div class="gradient-underlay">
 		<img class="watermark" src="<?php echo get_template_directory_uri(); ?>/img/r-watermark.png?>" alt="watermark">
 	</div>
+	<?php reveille_systems_breadcrumbs(); ?>
+	<main id="content" class="site-content" role="main">
+		<article class="entry-content">
+			<div class="container">
+				<div class="row">
 
 				<header class="header-content col-sm-12 col-md-8 pb-3">
 				<span class="text-uppercase subheader">
-				 <?php the_field('page_subheader');  ?>
+				 <?php the_field('careers_page_subheader');  ?>
 				</span>
 			   <?php the_title('<h1 class="h1 font-weight-bold">', '</h1>', 'reveille-systems'); ?>
 			    </header>
 
-	<main id="content" class="site-content" role="main">
-		<article class="pd-b-100 entry-content">
-			<div class="container">
-				<div class="row">
-					
-					<?php reveille_systems_header_content(); ?>
 					<div class="entry-content col-sm-12 col-md-9 pr-5">
 						
 						<?php the_content();?>
 					</div>
 					
+					<aside class="col-sm-12 col-md-3 sidebar">
+						
+						<?php dynamic_sidebar('careers-sidebar'); ?>
+					</aside>
 				</div>
 			</div>
 			

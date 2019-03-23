@@ -24,7 +24,7 @@
         <div class="navbar fixed-top navbar-light m-0" id="banner">
           <div class="container-fluid">
             
-            <div class="navbar-brand pl-2">
+            <div class="navbar-brand">
               <?php
               the_custom_logo();
               if ( is_front_page() && is_home() ) :
@@ -42,21 +42,30 @@
               <p class="site-description"><?php echo $reveille_systems_description; /* WPCS: xss ok. */ ?></p>
               <?php endif; ?>
               </div><!-- .site-branding -->
+
+
               <ul class="list-inline pr-4 my-auto ml-auto font-weight-bold support-menu">
                 <li class="list-inline-item"><a href="" class="active">support</a></li>
                 <li class="list-inline-item"><a href="">client portal</a></li>
                 <li class="list-inline-item active"><a href="">request a quote</a></li>
-              </ul>
-              <button class="navbar-toggler border-0 pr-2" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+              </ul>              
+
+              <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
               </button>
+
             </div>
+           
             <div class="overlay">
               
-              <div class="collapse navbar-collapse h-100 bg-white p-0 m-0 w-100" id="navbarsExample01">
-                <div class="container-fluid p-2">
+              <div class="collapse navbar-collapse" id="navbarsExample01">
+                <div class="container-fluid">
+
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                </button>
                   
-                  <div class="navbar-brand ">
+                  <div class="navbar-brand">
                     <?php
                     the_custom_logo();
                     if ( is_front_page() && is_home() ) :
@@ -74,30 +83,32 @@
                     <p class="site-description"><?php echo $reveille_systems_description; /* WPCS: xss ok. */ ?></p>
                     <?php endif; ?>
                   </div>
+              
+
+
+
+
                   <!-- .site-branding -->
-                  <nav class="p-5 d-flex justify-content-center align-content-center">
+                  <nav class="py-md-5 d-flex justify-content-center align-content-center px-sm-0">
 
                         <?php wp_nav_menu(array(
-            'menu'       => 'menu-1', // specify the menu name
-            'menu_class' => 'dropdown-menu forAnimate', // add classes for the dropdown
-            'container'  => '', // don't wrap the menu in <div>
-            'items_wrap' => '<ul id="%1$s" class="list-unstyled text-center" role="menu" >%3$s</ul>',
-        ));?>      
+                            'menu'       => 'primary', // specify the menu name
+                            'menu_class' => 'dropdown-menu forAnimate', // add classes for the dropdown
+                            'container'  => '', // don't wrap the menu in <div>
+                            'items_wrap' => '<ul id="%1$s" class="mobile-nav pl-0 mb-5" role="menu" >%3$s</ul>',
+                        ));?>      
 
                   </nav>
-                  <div class="social-icons d-flex justify-content-center align-content-center p-5">
+
+                  <div class="social-icons d-flex justify-content-center align-content-end">
                     
                     <ul class="d-flex d-inline-block list-unstyled">
-                      <li ><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li ><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li ><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      <li ><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo esc_html('https://www.facebook.com/', 'reveille-systems'); echo the_field('facebook_id', 'option'); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo  esc_html('https://www.twitter.com/', 'reveille-systems'); echo the_field('twitter_id', 'option'); ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo  esc_html('https://www.instagram.com/', 'reveille-systems'); echo the_field('instagram_id', 'option'); ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo  esc_html('https://www.linkedin.com/company/', 'reveille-systems'); echo the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
-                  
-                  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
-                  </button>
                   
                 </div>
                 

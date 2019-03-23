@@ -1,0 +1,50 @@
+@include media-breakpoint-up(md) {
+
+	.page-wrapper-contact {
+
+
+	position: relative;
+	margin-top: -150px;
+
+	.subheader {
+
+	    font-size: 1rem;
+	    letter-spacing: .5rem;
+	    color: $primary;
+
+	}
+	.breadcrumb {
+
+	  margin-top: 150px;
+	  background-color: transparent;
+	}
+
+
+
+	.gradient-underlay {
+	                position: absolute;
+	                top: 0;
+	                right: 0;
+	                width: 72%;
+	                height: 88%;
+	                background-color: #f5f5f5;
+	                opacity: .8;
+	                z-index: -1;
+
+
+
+	                img {
+
+	                            position: absolute;
+	                            top: 28%;
+	                            right:6%;
+
+
+	                }
+
+	            }
+
+	}
+
+
+}

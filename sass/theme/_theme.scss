@@ -1,6 +1,6 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-// 
-// 
+//
+//
 body {
 				margin-top: 40px;
 				font-size: 16px;
@@ -8,20 +8,17 @@ body {
 
 @import "typography"; // <------- Styles for typography.
 @import "buttons"; // <------- Styles for typography.
-
 @import "global"; // <------- Styles for site wide styles.
 @import "navigation"; // <------- Styles for navigation.
 @import "home"; // <------- Styles for home page.
 @import "about"; // <------- Styles for about page.
+@import "contact"; // <------- Styles for about page.
 @import "services"; // <------- Styles for about page.
 @import "case-study"; // <------- Styles for about page bigger screens.
 @import "footer"; // <------- Styles for footer.
-
-
 @import "home-breakpoints"; // <------- Styles for home page on bigger screens.
-//@import "home-large-breakpoints"; // <------- Styles for home page on bigger screens.
-
 @import "global-breakpoints"; // <------- Styles for about page bigger screens.
 @import "about-breakpoints"; // <------- Styles for about page bigger screens.
+@import "contact-breakpoints"; // <------- Styles for about page bigger screens.
 @import "services-breakpoints"; // <------- Styles for about page bigger screens.
 @import "case-study-breakpoints"; // <------- Styles for about page bigger screens.

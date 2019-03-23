@@ -1,7 +1,51 @@
 //about page
 //
 //
+//
+.page-wrapper-about {
 
+
+position: relative;
+margin-top: -150px;
+
+.subheader {
+
+    font-size: 1rem;
+    letter-spacing: .5rem;
+    color: $primary;
+
+}
+.breadcrumb {
+
+  margin-top: 130px;
+  background-color: transparent;
+}
+
+.gradient-underlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 86%;
+                height: 35%;
+                background-color: #f5f5f5;
+                opacity: .8;
+                z-index: -1;
+
+
+
+                img {
+
+                            position: absolute;
+                            top: 18%;
+                            right:2%;
+
+
+
+                }
+
+            }
+
+}
 .why-choose-section {
 position: relative;
 padding-bottom: 40px;
@@ -9,9 +53,7 @@ padding-bottom: 40px;
 .why-choose-slider {
 
 position: relative;
-
-
--webkit-box-shadow: -13px 13px 15px -10px rgba(0,0,0,0.38); 
+-webkit-box-shadow: -13px 13px 15px -10px rgba(0,0,0,0.38);
 box-shadow: -13px 13px 15px -10px rgba(0,0,0,0.38);
 border-radius: 15px;
 
@@ -22,7 +64,7 @@ border-radius: 15px;
 
 }
 
-.owl-dots 
+.owl-dots
 {
 	display: none;
 }
@@ -31,7 +73,7 @@ border-radius: 15px;
 
 position: absolute;
 
-bottom: 68%;
+bottom: 74%;
 
 left: 9%;
 
@@ -91,24 +133,29 @@ background-color: #f0ede5;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
 display: block;
+height: 250px;
+
 
 				.why-background-text {
-					
-				font-size: 212.94px;
+
+				font-size: 112.94px;
 				color: #595a5b;
 				opacity: .1;
 				font-family: futura-pt, sans-serif;
 				font-style: normal;
 				font-weight: 700;
-                
+        position: absolute;
+        top: 18%;
+        overflow: hidden;
 				}
 
 				.why-foreground-text {
 
 						position: absolute;
-						top: 44%;
+						top: 49%;
 						left: 29%;
 						z-index: 2;
+
 
 				}
 
@@ -121,6 +168,8 @@ display: block;
 				border-bottom-left-radius: 15px;
 border-bottom-right-radius: 15px;
 display: block;
+min-height: 600px;
+
 
 .reasons {
 
@@ -143,19 +192,19 @@ display: block;
   font-weight: 100;
 }
 
-			
-
-}
 
 
 }
 
+
 }
 
-//meet theteam boxes 
+}
+
+//meet theteam boxes
 //
 .our-team-section {
-		
+
 		.subheader {
 			font-size: 1rem;
 			letter-spacing: .3rem;
@@ -176,7 +225,7 @@ display: block;
     	font-size: 0.75rem;
     }
 
-	}	
+	}
 
   }
 
@@ -190,7 +239,7 @@ display: block;
     .h7 {
     }
 
-	}	
+	}
 
   }
 
@@ -201,7 +250,7 @@ display: block;
 		background-color: $beige;
 
 
-	}	
+	}
 
   }
 
@@ -234,13 +283,13 @@ display: block;
  	font-size: 2.25rem;
 
  }
-		
+
   	.markets-slider {
 
 .owl-nav .owl-prev,
 .owl-nav .owl-next,
 .owl-dot {
-    
+
     font-family: 'fontAwesome';
 }
 
@@ -248,7 +297,7 @@ display: block;
 
 position: absolute;
 
-bottom: 0;
+bottom: -20px;
 
 left: 0;
 
@@ -267,7 +316,7 @@ z-index: 20;
 
 position: absolute;
 
-bottom: 0;
+bottom: -20px;
 
 left: 100px;
 
@@ -286,7 +335,7 @@ z-index: 21;
      border: none;
      background: #dcdcd8;
      margin-right: 5px;
-     display: inline-block; 
+     display: inline-block;
      z-index: 1000;
 }
 
@@ -341,15 +390,18 @@ z-index: 21;
 			background-color: #f5f3ed;
 			padding: 40px;
 			z-index: 0;
-
+			
 		}
 
 		.box-image {
-				
+
 		 margin-bottom: 20px;
 		 background-color: transparent;
+       img {
+         border-radius: 15px;
+       }
 		}
-		
+
 		.h4 {
 			//59.97px
 			font-size: 3.748125rem;
@@ -368,7 +420,7 @@ z-index: 21;
 		}
 
 		.social-icons {
-			
+
 			ul {
 				li {
 					list-style: none;
@@ -385,5 +437,5 @@ z-index: 21;
 
 }
 
-}
 
+}

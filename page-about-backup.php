@@ -178,8 +178,21 @@ while ( have_posts() ) : the_post();  ?>
 					</section>
 					<!--our customers section, who we serve-->
 					<section class="pb-sm-3 pb-md-5 our-customers-section">
+
+																	<div class="markets-slider owl-carousel owl-theme">
+
+																									<?php
+												// check if the repeater field has rows of data
+												if( have_rows('our_customers_slider') ):
+												// loop through the rows of data
+												while ( have_rows('our_customers_slider') ) : the_row();
+												?>
+							
+												<div class="item">
 						<div class="container">
 							<div class="row">
+						
+
 								<div class="col-sm-12 col-md-10 mb-4">
 									<span class="text-uppercase subheader"><?php the_field('our_customers_subheader'); ?></span>
 									<h1 class="h1"><?php the_field('our_customers_main_heading'); ?></h1>
@@ -202,30 +215,20 @@ while ( have_posts() ) : the_post();  ?>
 											</div>
 										</div>
 									</div>
+
 									<div class="col-sm-12 col-md-11 offset-sm-0 offset-md-1 box-background">
 										
 										<div class="col-sm-12 col-md-6 box-text float-right mr-md-4 pb-md-4">
 											<span class="text-uppercase subheader pl-1 pt-2"><?php the_field('our_customers_slider_subheader'); ?></span>
 											
-											<div class="markets-slider owl-carousel owl-theme">
-												<?php
-												// check if the repeater field has rows of data
-												if( have_rows('our_customers_slider') ):
-												// loop through the rows of data
-												while ( have_rows('our_customers_slider') ) : the_row();
-												?>
-												<div class="item">
+
 													
 													<h4 class="h4 text-capitalize"><?php the_sub_field('customers_item_main_heading'); ?></h4>
 													<div class="pb-md-4 pr-md-4"><?php the_sub_field('customers_item_text'); ?></div>
 													
 												</div>
 												
-												<?php  endwhile;
-												else :
-												// no rows found
-												endif;
-												?>
+
 												
 												</div><!--.slider-->
 											</div>
@@ -235,7 +238,13 @@ while ( have_posts() ) : the_post();  ?>
 								</div>
 							</div>
 							
+							
 						</div>
+																		<?php  endwhile;
+												else :
+												// no rows found
+												endif;
+												?>
 					</section>
 					
 					<?php get_template_part( 'template-parts/content', 'get-started' );
