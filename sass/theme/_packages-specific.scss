@@ -1,0 +1,371 @@
+.page-wrapper-packages-specific {
+
+position: relative;
+margin-top: -150px;
+
+
+.breadcrumb {
+
+  margin-top: 130px;
+  background-color: transparent;
+}
+
+.gradient-underlay {
+                position: absolute;
+                top: 0;
+                right: 2%;
+                width: 86%;
+                height: 12%;
+                background-color: #f5f5f5;
+                opacity: .8;
+                z-index: -1;
+
+                @include media-breakpoint-up(md) {
+                    width: 72%;
+                    height: 22%;
+                }
+
+                  @include media-breakpoint-up(lg) {
+                    width: 72%;
+                    height: 22%;
+                }
+
+                img {
+
+                            position: absolute;
+                            top: 38%;
+                            right:2%;
+                            height: 25%;
+                            width: 35%;
+
+                     @include media-breakpoint-down(md) {
+                                  top: 18%;
+                                  right:18%;
+                                  height: 50%;
+                                  width: 50%;
+
+
+                }
+
+                 @include media-breakpoint-up(md) {
+
+                                  top: 18%;
+                                  right:18%;
+                                  height: 50%;
+                                  width: 50%;
+                }
+
+            }
+
+}
+
+       .subheader {
+           font-size: .95rem;
+           letter-spacing: .5rem;
+          color: $primary;
+
+
+   @include media-breakpoint-up(md) {
+                    font-size:  1rem;
+                    letter-spacing: .3rem;
+                }
+
+                  @include media-breakpoint-up(lg) {
+                    font-size:  1rem;
+letter-spacing: .3rem;
+                }
+
+    }
+
+           .section-subheader {
+           font-size: .95rem;
+            letter-spacing: .5rem;
+          color: $primary;
+
+
+   @include media-breakpoint-up(md) {
+                    font-size:  1rem;
+                    letter-spacing: .3rem;
+                }
+
+                  @include media-breakpoint-up(lg) {
+                    font-size:  1rem;
+letter-spacing: .3rem;
+                }
+
+    }
+
+.h2 {
+ font-size: 1.938rem;
+ font-weight: 900;
+   @include media-breakpoint-up(md) {
+                     font-size: 37px;
+                }
+
+
+}
+
+.video-container {
+
+height: 550px;
+border-radius: 15px;
+position: relative;
+
+  img {
+    border-radius: 15px;
+    min-height: 100%;
+    width: 100%;
+
+  }
+
+}
+
+table {
+
+  thead {
+  border-top: none !important;
+  
+    th {
+    font-size: 17.89px;
+     @include media-breakpoint-up(md) {
+                     font-size: 38px;
+                }
+
+                span {
+                   font-size: 9.89px;
+                   font-weight: 100;
+                   letter-spacing: .5px;
+                    @include media-breakpoint-up(md) {
+                     font-size: 17.89px;
+                }
+                }
+}
+
+}
+
+}
+.best-value {
+  background-color: rgba(0, 0, 0, .1);
+  border-top: none;
+  border-bottom: none;
+}
+
+  caption {
+
+    font-size: 37.99px;
+    font-weight: 800;
+    caption-side: top;
+    margin-bottom: 20px;
+
+  }
+
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: none !important;
+}
+
+
+.table-striped tbody tr:nth-of-type(2n+2) {
+    background-color: rgba(255,255,255, 1);
+}
+.table-striped tbody tr:nth-of-type(2n+1) {
+  background-color: rgba(0,0,0,.05);
+}
+
+.package-box {
+
+a.package-box-content {
+
+  background-color: #f5f5f5;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: background 0.5s ease;
+  border-radius: 15px !important;
+
+   .subheader {
+           font-size: .95rem;
+            letter-spacing: .5rem;
+          color: $primary;
+
+
+   @include media-breakpoint-up(md) {
+                    font-size:  1rem;
+                    letter-spacing: .3rem;
+                }
+
+                  @include media-breakpoint-up(lg) {
+                    font-size:  1rem;
+letter-spacing: .3rem;
+                }
+
+    }
+
+    .h4 {
+ font-size: 1.938rem;
+
+   @include media-breakpoint-up(md) {
+                     font-size: 27.99px;
+                }
+
+                  @include media-breakpoint-up(lg) {
+                     font-size: 27.99px;
+                }
+
+}
+
+span.package-button {
+  color: $primary;
+  text-align: right;
+  display: inline-block;
+  
+
+  i.fa-chevron-right
+        {
+        
+            color: $white;
+            background-color: $primary;
+        }
+}
+
+
+}
+
+a.package-box-content:hover {
+  text-decoration: none;
+  color: $secondary;
+
+  span.package-button {
+  color: $secondary;
+
+  i.fa-chevron-right
+        {
+            color: $white;
+            background-color: $secondary;
+        }
+}
+}
+.package-box-callto {
+      background: linear-gradient(90deg, $beige 50%, #ffffff 50%);
+}
+.package-box-callto:hover {
+      background: linear-gradient(90deg, $beige 100%, #ffffff 0%);
+}
+      
+}
+
+.related-case-studies {
+
+  .cases {
+    a
+    { 
+        .card
+        {
+            border: none;
+            background-color: rgba(255,255,255, .0);
+            border-radius: 15px;
+            margin-bottom: 20px;
+
+
+            .card-img-top
+            {
+                border-radius: 15px;
+            }
+
+            .gradient-overlay
+            {
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                right: 0;
+
+                width: 100%;
+                height: 100%;
+
+                opacity: .4;
+                border-radius: 15px;
+                background-color: #000;
+            }
+
+
+            .card-text
+            {
+                position: absolute;
+                bottom: 1.2rem;
+                left: 1.2rem;
+
+                width: 88%;
+
+
+                .h7
+                {
+                    font-size: 12px;
+
+                    letter-spacing: .4rem;
+                }
+
+                .h6
+                {
+                    font-size: 22px;
+                }
+            }
+
+
+            .card-button
+            {
+                position: absolute;
+                right: 1.2rem;
+                bottom: 1.2rem;
+
+                span i
+                {
+                    margin-left: 1rem;
+                    padding: .6rem;
+
+                    color: $primary;
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+
+    a:hover
+    {
+        .card
+        {
+            .gradient-overlay
+            {
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+
+                border-radius: 15px;
+                background: rgba(0, 0, 0, .6);
+            }
+
+
+
+            .card-button
+            {
+                span i
+                {
+                    color: $primary;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+  }
+  
+}
+

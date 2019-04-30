@@ -1,0 +1,146 @@
+ .markets-slider {
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-dot {
+
+    font-family: 'fontAwesome';
+}
+
+.owl-nav {
+position: absolute;
+bottom: -20px;
+left: 0;
+text-align: right;
+max-width: 150px;
+width: 150px;
+padding-right: 50px;
+z-index: 20;
+
+	@include media-breakpoint-up(md) {
+		bottom: 20px;
+		right: 43%;
+		max-width: 150px;
+		width: 150px;
+		padding-right: 50px;
+		z-index: 20;
+	}
+
+
+}
+
+.owl-dots {
+position: absolute;
+bottom: -20px;
+left: 100px;
+max-width: 150px;
+width: 150px;
+z-index: 21;
+
+   @include media-breakpoint-up(md) {
+
+		bottom: 20px;
+		right:38%;
+		max-width: 100px;
+		width: 100px;
+		z-index: 21;
+
+   	}
+}
+
+.owl-dot {
+	 width: 12px;
+     height: 12px;
+     border-radius: 100%;
+     border: none;
+     background: #dcdcd8;
+     margin-right: 5px;
+     display: inline-block;
+     z-index: 1000;
+}
+
+.owl-dot.active {
+	     background: #919798;
+         width: 20px;
+         height: 20px;
+}
+
+.owl-nav .owl-prev:before{
+    // fa-chevron-left
+    content: "\f053";
+    margin-right:10px;
+	color: $secondary;
+	border: 1px solid $secondary;
+	padding: .6rem;
+	border-radius: 50%;
+}
+.owl-nav .owl-next:after{
+    //fa-chevron-right
+    content: "\f054";
+    margin-right:10px;
+    color: $secondary;
+	border: 1px solid $secondary;
+	padding: .6rem;
+	border-radius: 50%;
+}
+.owl-nav :hover.owl-prev:before {
+    // fa-chevron-left
+    content: "\f053";
+    margin-right:10px;
+	color: $primary;
+	border: 1px solid $primary;
+	padding: .6rem;
+	border-radius: 50%;
+}
+.owl-nav .owl-next:hover:after {
+    //fa-chevron-right
+    content: "\f054";
+    margin-right:10px;
+    color: $primary;
+	border: 1px solid $primary;
+	padding: .6rem;
+	border-radius: 50%;
+}
+
+		.h4 {
+			//59.97px
+			font-size: 3.748125rem;
+
+			@include media-breakpoint-up(md) {
+
+				//79.97px
+      			font-size: 4.998125rem;
+			}
+
+			@include media-breakpoint-up(lg) {
+
+
+			}
+
+		}
+
+		.h5 {
+			//17.99px
+			font-size: 1.124375rem;
+
+			@include media-breakpoint-up(md) {
+
+				 //17.99px;
+     			 font-size: 1.124375rem;
+
+			}
+
+			@include media-breakpoint-up(lg) {
+
+				
+			}
+		}
+
+		.calltos {
+
+			a {
+				display: inline-block;
+			}
+		}
+	
+}

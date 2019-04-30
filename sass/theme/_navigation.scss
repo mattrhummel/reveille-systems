@@ -1,182 +1,229 @@
+.wrapper {
+	display: block;
+}
 
-.overlay {
-
-z-index: 2;
-position: relative;
-left: 0;
-top: -75px;
-width: 100%;
-z-index: 2;
+#sidebar {
+    display: none;
+    position: fixed;
+ 	width: 50vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* top layer */
+    z-index: 9999;
 
 }
 
-                    .show {
-                     min-width: 100%;
+.popup {
+    min-width: 100%;
+    display: none;
+     position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(255, 255, 255, 1);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 1;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
 
+/* display .overlay when it has the .active class */
+.show {
+    display: block;
+    opacity: 1;
 
+}
 
-                    }
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
 
 .navbar {
 
 margin: 0;
 padding: 0;
 
+.navbar-collapse {
 
-				.navbar-collapse {
+ul.mobile-nav {
 
+list-style: none;
+z-index: 1000;
 
-					background-color: $white;
-					margin: 0;
-					min-width: 100%;
-                    min-height: 100vh;
-                    position: relative;
-                    transition: all 1s ease; transition: all 1s ease;
+li.menu-item {
 
+display: block;
+padding: 2rem 0 0 0 ;
+width: 100%;
+text-align: center;
 
-                                             ul.mobile-nav {
+@include media-breakpoint-up(md) {
 
-                                             	list-style: none;
+padding: 1rem 0 0 0;
 
-                         	li.menu-item {
+}
 
-								    	display: block;
-    								  padding: 2rem 0 0 0 ;
-    								  width: 100%;
-											text-align: center;
+@include media-breakpoint-up(lg) {
 
-                        @include media-breakpoint-up(md) {
+padding: 2rem 0 0 0;
 
+}
 
-                                    padding: 1rem 0 0 0;
+@include media-breakpoint-between(lg, xl)
+{
+padding: 1.4rem 0 0 0 ;
 
-                        }
+}
 
-                        @include media-breakpoint-up(lg) {
+a {
 
+padding: 0  !important;
+font-weight: 900 !important;
+font-size: 1.2rem !important;
+text-transform: capitalize;
+font-family: open-sans, sans-serif;
+color: $primary;
+letter-spacing: .85px;
 
-                                    padding: 2rem 0 0 0;
+}
 
-                        }
+@include media-breakpoint-up(md) {
 
+a {
+padding: 0 2rem 1rem 2rem !important;
+font-size: 1.6rem !important;
+}
 
-									a {
+}
 
-										padding: 0  !important;
-										font-weight: 900 !important;
-										font-size: 1.2rem !important;
-										text-transform: capitalize;
-										font-family: open-sans, sans-serif;
-										color: $primary;
-                    letter-spacing: .85px;
+@include media-breakpoint-up(lg) {
 
-									}
+a {
+padding: 0 2rem 2rem 2rem !important;
+font-size: 2.8rem !important;
+}
 
-                  @include media-breakpoint-up(md) {
+}
 
-                    a {
-                      padding: 0 2rem 2rem 2rem !important;
-                      font-size: 2rem !important;
-                    }
+@include media-breakpoint-between(lg, xl)
+{
 
-                  }
+padding: 0 2rem !important;
 
-                  @include media-breakpoint-up(lg) {
+}
 
-                    a {
-                      padding: 0 2rem 2rem 2rem !important;
-                      font-size: 4rem !important;
-                    }
+a:hover {
+text-decoration: none;
+color: $secondary;
+}
 
-                  }
+}
+}
 
-									a:hover {
-										text-decoration: none;
-										color: $secondary;
-									}
+.navbar-toggler {
+position: absolute;
+right: 1rem;
+top: 1.5rem;
 
-								}
-                         }
+}
+.navbar-brand {
+margin-top: .6rem;
+}
 
+.social-icons {
 
-					.navbar-toggler {
-						position: absolute;
-						right: 1rem;
-						top: 1.5rem;
+bottom: 1rem;
+left: 45%;
+z-index: 1000;
 
-					}
+ul {
 
-		           .navbar-brand {
-		           	margin-top: .6rem;
-		           }
+text-align: center;
 
+li {
 
+a {
+color: $primary;
+padding: 0 1rem;
+width: 64px;
+font-size: 1.8rem;
 
-        .social-icons {
+}
 
-        	bottom: 1rem;
-        	left: 45%;
+@include media-breakpoint-up(md) {
+a {
+padding: 0 6rem;
+}
+}
+}
+}
+}
 
-
-          ul {
-
-            text-align: center;
-
-            li {
-
-
-              a {
-                color: $primary;
-                padding: 0 1rem;
-                width: 64px;
-                font-size: 1.8rem;
-
-              }
-
-              @include media-breakpoint-up(md) {
-                  a {
-                      padding: 0 6rem;
-                  }
-              }
-            }
-          }
-        }
-
-
-				}
+}
 
 }
 
 .navbar-light .navbar-toggler {
 
-				color: rgba(0, 0, 0, .01);
-				position: relative;
-				background-color: $primary;
-				border: 1px solid #cccccc;
-				border-radius: 50%;
-				padding: 1.2rem;
-				-webkit-box-shadow: 1px 6px 16px -1px rgba(50, 50, 50, 0.52);
-				-moz-box-shadow: 1px 6px 16px -1px rgba(50, 50, 50, 0.52);
-				box-shadow: 1px 6px 16px -1px rgba(50, 50, 50, 0.52);
+color: rgba(0, 0, 0, .01);
+position: relative;
+background-color: $primary;
+border: 1px solid #cccccc;
+border-radius: 50%;
+padding: 1.2rem;
+-webkit-box-shadow: 1px 6px 16px -1px rgba(50, 50, 50, 0.52);
+-moz-box-shadow: 1px 6px 16px -1px rgba(50, 50, 50, 0.52);
+box-shadow: 1px 6px 16px -1px rgba(50, 50, 50, 0.52);
 
-				.fa-ellipsis-h {
+.fa-ellipsis-h {
 
-								color: $white;
-								bottom: 8px;
-				}
-
+color: $white;
+bottom: 8px;
 }
 
+}
 .shrink {
-				padding-top: 0;
-				padding-bottom: 0;
-				background-color: #ffffff;
+padding-top: 0;
+padding-bottom: 0;
+background-color: #ffffff;
+}
+.support-menu {
+display: none;
+
+@include media-breakpoint-up(lg) {
+
+display: block;
+
 }
 
-.support-menu {
-	display: none;
+li.list-inline-item:not(:last-child) {
 
-	li.active {
-		border-bottom: 1px solid #ffffff;
-	}
+@include media-breakpoint-up(md) {
+
+margin-right: 1rem;
+
+}
+
+@include media-breakpoint-up(lg) {
+
+margin-right: 3rem;
+
+}
+
+}
+
+li.active {
+border-bottom: 1px solid #ffffff;
+}
+
+
+
 }
