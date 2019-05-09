@@ -2,6 +2,7 @@
 {
 position: relative;
 margin-top: 70px;
+
 @include media-breakpoint-up(lg) {
 margin-top: -35px;
 }
@@ -15,6 +16,7 @@ position: absolute;
 z-index: 2;
 top: 15%;
 right: 16%;
+
 @include media-breakpoint-between(sm, md) {
 right: 6%;
 top: 30%;
@@ -25,7 +27,13 @@ top: 32%;
 }
 @include media-breakpoint-between(lg, xl)
 {
-right: 80px;
+right: 40px;
+}
+@include media-breakpoint-only(md) {
+right: 20px;
+}
+@include media-breakpoint-only(lg) {
+right: 40px;
 }
 ul
 {
@@ -53,12 +61,21 @@ right: 20px;
 }
 @include media-breakpoint-up(lg) {
 bottom: 20px;
-right: 2%;
+right: 20px;
 }
 @include media-breakpoint-between(lg, xl)
 {
 bottom: 60px;
-right: 60px;
+right: 20px;
+}
+@include media-breakpoint-only(md) {
+bottom: 10px;
+right: 10px;
+}
+@include media-breakpoint-only(lg) {
+display: block !important;
+bottom: 20px;
+right: 20px;
 }
 a
 {
@@ -91,37 +108,65 @@ border: 1px solid #f1f1f1;
 bottom: 7%;
 left: 50%;
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
 bottom: 0;
-left: 47%;
+left: 32%;
 width: 260px;
 }
-@include media-breakpoint-between(lg, xl) {
-bottom: 70px;
-left: 47%;
-width: 180px;
+@include media-breakpoint-up(lg) {
+bottom: 48px;
+left: 46%;
+width: 220px;
+}
+@include media-breakpoint-only(md) {
+bottom: 36px;
+left: 420px;
+width: 60px;
+}
+@include media-breakpoint-only(lg) {
+bottom: 36px;
+left: 460px;
+width: 200px;
 }
 }
 .scroll-to-continue {
 position: absolute;
-bottom: 40px;
+bottom: 20px;
 left: 28px;
-z-index: 10;
 display: block;
+
 @include media-breakpoint-between(sm, md) {
-bottom: 3%;
+bottom: -20px;
 left: 2%;
+display: block;
 }
 @include media-breakpoint-up(md) {
-display: none;
+display: block;
+bottom: 0;
 }
 @include media-breakpoint-up(lg) {
-bottom: 2%;
+bottom: 300px;
 left: 2%;
+display: block;
+}
+@include media-breakpoint-between(md, lg) {
+display: block !important;
+bottom: 20px;
+left: 40px;
 }
 @include media-breakpoint-between(lg, xl) {
-bottom: 60px;
-left: 2%;
+bottom: 40px;
+left: 40px;
+display: block;
+}
+@include media-breakpoint-only(md) {
+bottom: 0;
+left: 40px
+}
+@include media-breakpoint-only(lg) {
+display: block !important;
+bottom: 20px;
+left: 40px
 }
 a {
 display: block;
@@ -136,16 +181,27 @@ width: 42px;
 .hero-slider
 {
 position: relative;
+max-height: 100vh;
 @include media-breakpoint-between(sm, md) {
 display: block;
 }
-@include media-breakpoint-up(lg) {
-display: block;
+@include media-breakpoint-between(md,lg) {
+max-height: 200vh;
 }
-
+@include media-breakpoint-only(md) {
+min-height:45vh;
+}
+@include media-breakpoint-only(lg) {
+display: block;
+min-height: 72vh;
+}
+@include media-breakpoint-up(lg) {
+max-height: 103vh;
+}
 .box-background
 {
 position: relative;
+
 @include media-breakpoint-between(sm, md) {
 background-color: $primary;
 padding: 40px;
@@ -153,6 +209,12 @@ padding: 40px;
 @include media-breakpoint-up(lg) {
 background-color: $primary;
 padding: 40px;
+}
+@include media-breakpoint-only(md) {
+min-height:45vh;
+}
+@include media-breakpoint-only(lg) {
+min-height: 73vh;
 }
 .gradient-overlay
 {
@@ -208,29 +270,23 @@ margin-top: 0;
 }
 .subheader
 {
-
-font-size: 26.26px;
+font-size: 16.26px;
 letter-spacing: .3rem;
 color: $white;
-
-
 @include media-breakpoint-between(sm, md) {
-font-size: 26.26px;
+font-size: 16.26px;
 letter-spacing: .5rem;
 color: $primary;
 }
-
 @include media-breakpoint-up(md) {
 font-size: 18.26px;
 line-height: 18.26px;
 }
-
 @include media-breakpoint-up(lg) {
 font-size: 26.26px;
 letter-spacing: .5rem;
 color: $primary;
 line-height: 26.26px;
-
 }
 }
 .h1
@@ -238,33 +294,44 @@ line-height: 26.26px;
 font-size: 2rem;
 color: #d6d6d6;
 text-transform: capitalize;
+margin: 8px 0;
 
 @include media-breakpoint-between(sm, md) {
 font-size: 79.4px;
 padding: 0;
 line-height: 79.4px;
-
+}
+@include media-breakpoint-between(md, lg) {
+font-size: 39px;
+margin: 16px 0;
 }
 @include media-breakpoint-up(md) {
 font-size: 49px;
-margin: 16px 0;
+margin: 2px 0;
 }
+
 @include media-breakpoint-up(lg) {
 font-size: 109.4px;
 padding: 0;
 line-height: 109.4px;
 margin: 36px 0;
 }
-
-
+@include media-breakpoint-only(lg) {
+font-size: 89px !important;
+margin: 2px 0 !important;
+}
 }
 p
 {
 font-size: 17.5px;
-line-height: 17.5px;
+line-height: 24px;
 
 @include media-breakpoint-between(sm, md) {
 font-size: 14.5px;
+line-height: 24px;
+}
+@include media-breakpoint-between(md, lg) {
+font-size: 17.5px;
 line-height: 24px;
 }
 @include media-breakpoint-up(lg) {
@@ -286,7 +353,7 @@ display:none;
 
 @include media-breakpoint-up(lg) {
 position: absolute;
-bottom: 80px;
+bottom: 160px;
 left: 360px;
 z-index: -2;
 font-size: 393.83px;
@@ -295,10 +362,26 @@ display: block;
 }
 @include media-breakpoint-up(xl) {
 position: absolute;
-bottom: 100px;
+bottom: 130px;
 left: 300px;
 z-index: -2;
 font-size: 393.83px;
+}
+@include media-breakpoint-only(md) {
+position: absolute;
+bottom: -40px !important;
+left: 220px;
+display: block;
+font-size: 193.83px;
+color: #f1f1f1;
+}
+@include media-breakpoint-only(lg) {
+position: absolute;
+bottom: 0;
+left: 220px;
+display: block;
+font-size: 193.83px;
+color: #f1f1f1;
 }
 }
 }
@@ -306,18 +389,39 @@ font-size: 393.83px;
 {
 display: none;
 transition: .5s ease;
+@include media-breakpoint-between (sm, md) {
+ display: none;
+}
+@include media-breakpoint-between(md, lg) {
+  display: none;
+}
 @include media-breakpoint-up(lg) {
 position: absolute;
 top: 120px;
-left: -60px;
+right: 340px;
 z-index: 1;
 display: block;
 height: 70%;
 width: 70%;
 }
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-down (xl) {
 height: 65%;
 width: 65%;
+top: 140px;
+right: 540px;
+}
+@include media-breakpoint-only(md) {
+position: absolute;
+top: 102px;
+right: 80px;
+z-index: 1;
+display: block;
+height: 65%;
+width: 75%;
+}
+@include media-breakpoint-only(lg) {
+top: 100px !important;
+right: 120px !important;
 }
 .gradient-overlay
 {
@@ -397,8 +501,16 @@ bottom: 10px;
 right: 16%;
 }
 @include media-breakpoint-up(xl) {
-bottom: 60px;
+bottom: 40px;
 right: 18%;
+}
+@include media-breakpoint-only(md) {
+bottom: 20px;
+right: 30px;
+}
+@include media-breakpoint-only(lg) {
+bottom: 20px;
+right: 60px;
 }
 }
 .owl-dots
@@ -413,13 +525,21 @@ text-align: right;
 @include media-breakpoint-between(sm, md) {
 right:29%;
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-between(lg, xl) {
 bottom: 10px;
-right:27%;
+right: 420px;
 }
 @include media-breakpoint-up(xl) {
-bottom: 60px;
-right:32%;
+bottom: 40px;
+right: 520px;
+}
+@include media-breakpoint-only(md) {
+bottom: 26px !important;
+right: 200px !important;
+}
+@include media-breakpoint-only(lg) {
+bottom: 26px !important;
+right: 260px !important;
 }
 }
 .owl-dot

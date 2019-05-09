@@ -43,11 +43,10 @@
               <?php endif; ?>
               </div><!-- .site-branding -->
 
-
               <ul class="list-inline pr-4 my-auto ml-auto font-weight-bold support-menu">
-                <li class="list-inline-item"><a href="" class="active">support</a></li>
-                <li class="list-inline-item"><a href="">client portal</a></li>
-                <li class="list-inline-item active"><a href="">request a quote</a></li>
+                <li class="list-inline-item"><a href="https://get.teamviewer.com/rhehmz4" class="active">support</a></li>
+                <li class="list-inline-item"><a href="https://ww3.autotask.net/clientportal/Login.aspx?ci=301723&accountid=0">client portal</a></li>
+                <li class="list-inline-item active"><a href="/contact-us/">request a quote</a></li>
               </ul>              
 
               <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,19 +82,15 @@
                     <p class="site-description"><?php echo $reveille_systems_description; /* WPCS: xss ok. */ ?></p>
                     <?php endif; ?>
                   </div>
-              
-
-
-
 
                   <!-- .site-branding -->
-                  <nav class="py-md-5 d-flex justify-content-center align-content-center px-sm-0">
+                  <nav class="d-flex justify-content-center align-content-center px-sm-0">
 
                         <?php wp_nav_menu(array(
                             'menu'       => 'primary', // specify the menu name
                             'menu_class' => 'dropdown-menu forAnimate', // add classes for the dropdown
                             'container'  => '', // don't wrap the menu in <div>
-                            'items_wrap' => '<ul id="%1$s" class="mobile-nav pl-0 mb-5" role="menu" >%3$s</ul>',
+                            'items_wrap' => '<ul id="%1$s" class="mobile-nav pl-0 mb-5 list-style-none" role="menu" >%3$s</ul>',
                         ));?>      
 
                   </nav>
@@ -103,16 +98,17 @@
                   <div class="social-icons d-flex justify-content-center align-content-end">
                     
                     <ul class="d-flex d-inline-block list-unstyled">
-                      <li ><a href="<?php echo esc_html('https://www.facebook.com/', 'reveille-systems'); echo the_field('facebook_id', 'option'); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li ><a href="<?php echo  esc_html('https://www.twitter.com/', 'reveille-systems'); echo the_field('twitter_id', 'option'); ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li ><a href="<?php echo  esc_html('https://www.instagram.com/', 'reveille-systems'); echo the_field('instagram_id', 'option'); ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      <li ><a href="<?php echo  esc_html('https://www.linkedin.com/company/', 'reveille-systems'); echo the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo esc_html('https://www.facebook.com/', 'reveille-systems'); echo the_field('facebook_id', 'option'); ?>"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo  esc_html('https://www.twitter.com/', 'reveille-systems'); echo the_field('twitter_id', 'option'); ?>"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo  esc_html('https://www.instagram.com/', 'reveille-systems'); echo the_field('instagram_id', 'option'); ?>"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                      <li ><a href="<?php echo  esc_html('https://www.linkedin.com/company/', 'reveille-systems'); echo the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
                   
                 </div>
                 
               </div>
+              <div class="overlay-background"></div>
             </div>
           </div>
      
